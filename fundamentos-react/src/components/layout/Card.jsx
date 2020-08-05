@@ -6,8 +6,10 @@ export default props => {
 
     return (
         <div className="Card">
-            <div>Conteúdo</div>
-            <div>{props.titulo}</div>
+            <div className="Title">{props.titulo}</div>
+            <div className="Content">
+                {props.children}
+            </div>
         </div>
     )
 }
