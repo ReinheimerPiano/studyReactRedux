@@ -1,27 +1,33 @@
 import React from 'react';
 import './App.css';
 
-import Card from './components/layout/Card'
 import Primeiro from './components/basics/Primeiro'
 import Aleatorio from './components/basics/Aleatorio'
+import Card from './components/layout/Card'
 import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import Repeticao from './components/repeticao/ListaAlunos'
-
-
+import DesafioRepeticao from './components/repeticao/TabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-        <Card titulo="#06 - Lista Alunos" color="#f8f"><Repeticao></Repeticao></Card>
-
+            <Card titulo="#08 - Renderização Condicional" color="#bb0">
+                <ParOuImpar numero={213}></ParOuImpar>
+                <UsuarioInfo usuario={{nome:'Fernando'}}></UsuarioInfo>
+                <UsuarioInfo usuario={{email:'fer@nando.com'}}></UsuarioInfo>
+            </Card>
+            <Card titulo="#07 - Desafio Repetição" color="#b00"><DesafioRepeticao></DesafioRepeticao></Card>
+            <Card titulo="#06 - Repetição" color="#f8f"><Repeticao></Repeticao></Card>
             <Card titulo="#05 - Componentes com Filhos" color="#68f">
                 <Familia sobrenome="Ferreira">
-                    <FamiliaMembro nome="Pedro"/>
-                    <FamiliaMembro nome="João"/>
-                    <FamiliaMembro nome="Marcelo"/>
+                    <FamiliaMembro nome="Pedro" />
+                    <FamiliaMembro nome="João" />
+                    <FamiliaMembro nome="Marcelo" />
                 </Familia>
             </Card>
             <Card titulo="#04 - Exemplo de Card" color="#256"></Card>
