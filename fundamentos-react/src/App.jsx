@@ -10,11 +10,14 @@ import Repeticao from './components/repeticao/ListaAlunos'
 import DesafioRepeticao from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import Direta from './components/comunicacao/DiretaPai'
+import Indireta from './components/comunicacao/IndiretaPai'
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
-
+        <Card titulo="#10 -  Comunicação Indireta" color="#bbb"><Indireta></Indireta></Card>
+        <Card titulo="#09 -  Comunicação Direta" color="#bb3"><Direta></Direta></Card>
         <div className="Cards">
             <Card titulo="#08 - Renderização Condicional" color="#bb0">
                 <ParOuImpar numero={213}></ParOuImpar>
