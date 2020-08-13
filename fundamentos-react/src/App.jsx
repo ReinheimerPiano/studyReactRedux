@@ -13,6 +13,9 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 import Direta from './components/comunicacao/DiretaPai'
 import Indireta from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/Mega/Mega'
+import MegaC from './components/Mega/MegaCorrecao'
 
 
 export default () => (
@@ -20,7 +23,8 @@ export default () => (
         <h1>Fundamentos React</h1>
         <div className="Cards">
 
-            
+        <Card titulo="#13 -  Desafio Mega Sena" color="#002"><Mega></Mega><hr/><MegaC></MegaC></Card>
+        <Card titulo="#12 -  Contador" color="#200"><Contador numeroInicial={10}></Contador></Card>
         <Card titulo="#11 -  Componente Controlado" color="#c77"><Input></Input></Card>
         <Card titulo="#10 -  Comunicação Indireta" color="#bbb"><Indireta></Indireta></Card>
         <Card titulo="#09 -  Comunicação Direta" color="#bb3"><Direta></Direta></Card>
