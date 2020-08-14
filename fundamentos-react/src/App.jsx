@@ -23,7 +23,7 @@ export default () => (
         <h1>Fundamentos React</h1>
         <div className="Cards">
 
-        <Card titulo="#13 -  Desafio Mega Sena" color="#002"><Mega></Mega><hr/><MegaC></MegaC></Card>
+        <Card titulo="#13 -  Desafio Mega Sena" color="#002"><Mega></Mega><hr/><MegaC qtde={8}></MegaC></Card>
         <Card titulo="#12 -  Contador" color="#200"><Contador numeroInicial={10}></Contador></Card>
         <Card titulo="#11 -  Componente Controlado" color="#c77"><Input></Input></Card>
         <Card titulo="#10 -  Comunicação Indireta" color="#bbb"><Indireta></Indireta></Card>
